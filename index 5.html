@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluffy Game Portal</title>
+    <style>
+        /* Basic styling for body */
+        body {
+            background-color: #fce4ec; /* Soft pink background */
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fluffy, fun font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Styling for the container holding the buttons */
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+        }
+
+        /* Fluffy button styling */
+        .fluffy-button {
+            background-color: #ff80ab; /* Fluffy pink color */
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            outline: none;
+        }
+
+        /* Hover effect and animation for buttons */
+        .fluffy-button:hover {
+            background-color: #ff4081;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button click animation */
+        .fluffy-button:active {
+            transform: translateY(0);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animation for page load */
+        .container {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .fluffy-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fluffy Game Portal</h1>
+
+        <!-- Game 1 Button Placeholder -->
+        <button class="fluffy-button" onclick="window.location.href='https://ahmedmagedrihan.github.io/Night-Town/index%204.html'">
+            Game 1
+        </button>
+
+        <!-- Game 2 Button Placeholder -->
+        <button class="fluffy-button" onclick="window.location.href='https://ahmedmagedrihan.github.io/3D-car-game-new-look/'">
+            Game 2
+        </button>
+
+        <!-- Game 3 Button Placeholder -->
+        <button class="fluffy-button" onclick="window.location.href='https://ahmedmagedrihan.github.io/Space-invaders-mobile-beta/'">
+            Game 3
+        </button>
+    </div>
+</body>
+</html>
